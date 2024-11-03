@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/red-social-react/static/css/main.fc148c7e.css",
+    "main.js": "/red-social-react/static/js/main.52a095a9.js",
+    "index.html": "/red-social-react/index.html",
+    "main.fc148c7e.css.map": "/red-social-react/static/css/main.fc148c7e.css.map",
+    "main.52a095a9.js.map": "/red-social-react/static/js/main.52a095a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc148c7e.css",
+    "static/js/main.52a095a9.js"
+  ]
+}
