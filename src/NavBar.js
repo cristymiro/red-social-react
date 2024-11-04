@@ -1,11 +1,13 @@
 import React from 'react';
 import { FaHome, FaClock, FaUserFriends, FaCog, FaSignOutAlt, FaUserCircle } from 'react-icons/fa';
+import { useNavigate } from 'react-router-dom';
 import './NavBar.css';
 
 function NavBar() {
+  const navigate = useNavigate();
+
   return (
     <nav className="navbar">
-      {/* Parte izquierda */}
       <div className="navbar-left">
         <div className="navbar-brand">Red Social</div>
         <div className="navbar-item">
@@ -21,8 +23,6 @@ function NavBar() {
           <span>Gente</span>
         </div>
       </div>
-
-      {/* Parte derecha */}
       <div className="navbar-right">
         <div className="navbar-item">
           <FaUserCircle className="icon" />
@@ -32,9 +32,9 @@ function NavBar() {
           <FaCog className="icon" />
           <span>Ajustes</span>
         </div>
-        <div className="navbar-item">
+        <div className="navbar-item" onClick={() => navigate('/login')}>
           <FaSignOutAlt className="icon" />
-          <span>Cerrar Sesión</span>
+          <span>Iniciar Sesión</span>
         </div>
       </div>
     </nav>
